@@ -1,0 +1,1035 @@
+{
+  "id": "87b6c614-11a8-4be2-9e30-2bf221ab312b",
+  "version": "2.0",
+  "name": "XYZ BANK",
+  "url": "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login",
+  "tests": [{
+    "id": "c4338266-17df-491b-bbd3-c5eac40f7ef5",
+    "name": "VALIDACION INICIO",
+    "commands": [{
+      "id": "5fe5374b-c0fd-4cea-b7fd-10b60f228677",
+      "comment": "",
+      "command": "open",
+      "target": "/angularJs-protractor/BankingProject/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8bf47d0-2c53-45ff-b3e0-a0edb9af3b9e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "543x706",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46d0fa4e-61be-4b16-ba2b-67c4f356e53b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.mainHeading",
+      "targets": [],
+      "value": "XYZ Bank"
+    }, {
+      "id": "7b47ab96-b237-4206-bfd9-4d5560bbe3d4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.center:nth-child(1) > .btn",
+      "targets": [
+        ["css=.center:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Customer Login')]", "xpath:innerText"]
+      ],
+      "value": "Customer Login"
+    }, {
+      "id": "86e265e0-bd44-4a41-a1bc-77a5a7b8eba7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.center:nth-child(3) > .btn",
+      "targets": [
+        ["css=.center:nth-child(3) > .btn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Bank Manager Login')]", "xpath:innerText"]
+      ],
+      "value": "Bank Manager Login"
+    }, {
+      "id": "83a77d45-a0b2-45ef-922a-b1a834b89195",
+      "comment": "",
+      "command": "click",
+      "target": "css=.home",
+      "targets": [
+        ["css=.home", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e06ac92d-8fc8-424f-b124-7a13e0f0b49b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.home",
+      "targets": [
+        ["css=.home", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": "Home"
+    }]
+  }, {
+    "id": "98781a96-b407-460e-9214-d60da2416d35",
+    "name": "SESION CLIENTE",
+    "commands": [{
+      "id": "8e546ddc-b496-43be-a9c9-66aadfabe627",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b79735e-1d86-469f-a5f9-a4cede8b417b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "583x706",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90ec177a-3e79-4eb3-9eac-2a201cc1a5fe",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Customer Login')]",
+      "targets": [
+        ["css=.center:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Customer Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f2f1ec2-fd09-49d1-bb56-8331e657f3ad",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.mainHeading",
+      "targets": [],
+      "value": "XYZ Bank"
+    }, {
+      "id": "56c1e4e7-216b-4477-8a24-e5cd6667a983",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=label",
+      "targets": [],
+      "value": "Your Name :"
+    }, {
+      "id": "e8131beb-67ab-4b5a-89b8-50cdc5227d99",
+      "comment": "",
+      "command": "click",
+      "target": "id=userSelect",
+      "targets": [
+        ["id=userSelect", "id"],
+        ["name=userSelect", "name"],
+        ["css=#userSelect", "css:finder"],
+        ["xpath=//select[@id='userSelect']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d0c2f3f-8622-471b-a6e3-ee5c701adc39",
+      "comment": "",
+      "command": "select",
+      "target": "id=userSelect",
+      "targets": [],
+      "value": "---Your Name---"
+    }, {
+      "id": "c30102d4-bb53-4b02-93be-65b358d7a842",
+      "comment": "",
+      "command": "select",
+      "target": "id=userSelect",
+      "targets": [],
+      "value": "label=Hermoine Granger"
+    }, {
+      "id": "83fd3d98-c8f5-4dc8-978d-04800abc5899",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": "Login"
+    }, {
+      "id": "34f7c6ce-99e6-4999-8ab9-b6d626a0b8af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "df451fd6-be80-4167-b52a-576f0c4e4e5e",
+    "name": "SESION HERMOINE GRANGER",
+    "commands": [{
+      "id": "492e9d8f-c8ab-480b-9635-9269e21829c8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/account",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7edfec4a-1ba7-4300-8b2d-90e41607f46d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "589x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d856b078-1a65-4e17-9dcc-ac5b19f50aad",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.mainHeading",
+      "targets": [
+        ["css=.mainHeading", "css:finder"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'XYZ Bank')]", "xpath:innerText"]
+      ],
+      "value": "XYZ Bank"
+    }, {
+      "id": "26d6e49d-353b-4867-9591-a6b989710b57",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(1) > strong:nth-child(1)",
+      "targets": [],
+      "value": "Welcome Hermoine Granger !!"
+    }, {
+      "id": "83174a60-d40b-4366-a986-d36f12a37fe4",
+      "comment": "",
+      "command": "select",
+      "target": "id=accountSelect",
+      "targets": [],
+      "value": "label=1001"
+    }, {
+      "id": "7c53d5e2-52f5-4e9a-8c8d-31bbf6c2fd61",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=div:nth-child(1) > strong:nth-child(1)",
+      "targets": [],
+      "value": "Account Number: , Balance: , Currency:"
+    }, {
+      "id": "56a480c2-6d1a-4d8b-bcab-21a03befc89b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.center > .ng-binding:nth-child(1)",
+      "targets": [
+        ["css=.center > .ng-binding:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'1001 ')]", "xpath:innerText"]
+      ],
+      "value": "1001"
+    }, {
+      "id": "55767a53-ac5a-4b71-9291-e7409a5478fd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ng-binding:nth-child(2)",
+      "targets": [
+        ["css=.ng-binding:nth-child(2)", "css:finder"],
+        ["xpath=//strong[2]", "xpath:position"],
+        ["xpath=//strong[contains(.,'2500')]", "xpath:innerText"]
+      ],
+      "value": "43000"
+    }, {
+      "id": "25c94633-1e35-41a8-85a2-57ecd63a500b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ng-binding:nth-child(3)",
+      "targets": [
+        ["css=.ng-binding:nth-child(3)", "css:finder"],
+        ["xpath=//strong[3]", "xpath:position"],
+        ["xpath=//strong[contains(.,'Dollar')]", "xpath:innerText"]
+      ],
+      "value": "Dollar"
+    }, {
+      "id": "882d3db2-2335-4eb5-90a2-a83d3394629d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg:nth-child(1)",
+      "targets": [],
+      "value": "Transaction"
+    }]
+  }, {
+    "id": "582b85ea-cc92-4a52-93e6-62904f040c1e",
+    "name": "TRANSACCIONES HERMOINE GRANGER",
+    "commands": [{
+      "id": "274b9091-467b-4395-9318-f8fac392a356",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/listTx",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d4dc743-1137-428f-8584-e760df649783",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "593x706",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18d3bef2-d4fd-49ec-90bc-a5dc5088f2c4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.mainHeading",
+      "targets": [],
+      "value": "XYZ Bank"
+    }, {
+      "id": "3804b3cf-8df6-4c19-ae17-214f9208e78f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=thead td:nth-child(1)",
+      "targets": [],
+      "value": "Date-Time"
+    }, {
+      "id": "c158c624-b29c-42bb-8dea-7b2a3413ac60",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Amount",
+      "targets": [],
+      "value": "Amount"
+    }, {
+      "id": "e6bb4cd9-86bd-43d3-8e25-e527a78fc2ca",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Transaction Type",
+      "targets": [],
+      "value": "Transaction Type"
+    }, {
+      "id": "be103810-b9a5-40d8-897f-a6e110452a3a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.logout",
+      "targets": [
+        ["css=.logout", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": "Logout"
+    }, {
+      "id": "30e54ad5-63b2-49ab-95a7-62667c295825",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.home",
+      "targets": [
+        ["css=.home", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": "Home"
+    }, {
+      "id": "31ce0eaa-c998-4abc-8fdf-26f5661f649b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.fixedTopBox > .btn:nth-child(1)",
+      "targets": [
+        ["css=.fixedTopBox > .btn:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": "Back"
+    }, {
+      "id": "f4fe7550-1fbd-4c21-b37d-85a963ee746f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.fixedTopBox > .btn:nth-child(3)",
+      "targets": [
+        ["css=.fixedTopBox > .btn:nth-child(3)", "css:finder"],
+        ["xpath=//div[2]/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Reset')]", "xpath:innerText"]
+      ],
+      "value": "Reset"
+    }, {
+      "id": "fcb4b4e0-3d75-41aa-9c38-1e896ab2f3ae",
+      "comment": "",
+      "command": "type",
+      "target": "id=start",
+      "targets": [
+        ["id=start", "id"],
+        ["name=start", "name"],
+        ["css=#start", "css:finder"],
+        ["xpath=//input[@id='start']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2023-11-24T22:18:35.831"
+    }, {
+      "id": "7ab36c6f-98b3-4500-8104-c2570e07817a",
+      "comment": "",
+      "command": "type",
+      "target": "id=end",
+      "targets": [
+        ["id=end", "id"],
+        ["name=end", "name"],
+        ["css=#end", "css:finder"],
+        ["xpath=//input[@id='end']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2023-11-24T22:40:23.773"
+    }, {
+      "id": "e6c2e24c-3224-4f0c-8e0d-cf39e2ffcd4f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn-primary:nth-child(3)",
+      "targets": [
+        ["css=.btn-primary:nth-child(3)", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'>')]", "xpath:innerText"]
+      ],
+      "value": ">"
+    }, {
+      "id": "47161d22-6926-4703-842d-b90c81682501",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fixedTopBox > .btn:nth-child(1)",
+      "targets": [
+        ["css=.fixedTopBox > .btn:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e5dca71-8765-4dc6-b303-6472609793bd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Deposit')]", "xpath:innerText"]
+      ],
+      "value": "Deposit"
+    }, {
+      "id": "579f9536-9c16-4c48-ac89-f7a62d962b21",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Deposit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d073be3c-2887-4e27-b6fe-864fea48c021",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=label",
+      "targets": [
+        ["css=label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Amount to be Deposited :')]", "xpath:innerText"]
+      ],
+      "value": "Amount to be Deposited :"
+    }, {
+      "id": "40a7cb0d-c430-4b3e-b625-fa2d7c6f21d8",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "css=.form-control",
+      "targets": [],
+      "value": "amount"
+    }, {
+      "id": "10a177d8-553c-49fd-8460-e8cff5e0160c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@type='number']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "703b3471-77ac-4f6e-af53-671c82a2e9eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@value='']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "865c6e82-7b9c-47b0-b47e-6d144c2cd91e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.error",
+      "targets": [],
+      "value": "Deposit Successfull"
+    }, {
+      "id": "68597e2c-b609-4888-a760-c067e355afea",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Withdrawl')]", "xpath:innerText"]
+      ],
+      "value": "Deposit"
+    }, {
+      "id": "14bef5a1-0e66-4683-9cfe-556f16022b97",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg:nth-child(3)",
+      "targets": [
+        ["css=.btn-lg:nth-child(3)", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Withdrawl')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cec668dc-170d-4c77-bf04-31d4e98497f4",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "css=.form-control",
+      "targets": [],
+      "value": "amount"
+    }, {
+      "id": "ba8ba151-c426-4e46-9e1a-d15fd845a7b7",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control",
+      "targets": [],
+      "value": "2000"
+    }, {
+      "id": "921f953f-2637-4242-813b-150b32c3866a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@value='']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": "Withdraw"
+    }, {
+      "id": "a8a826f7-afc8-4f73-91ca-2aeab7fcdfce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@value='']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf581d6a-b145-4c0a-afff-4036bbb8d8d5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.error",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c14deba4-70a5-42d5-8594-1445a6a0d5b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg:nth-child(1)",
+      "targets": [
+        ["css=.btn-lg:nth-child(1)", "css:finder"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Transactions')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e137ee94-88dc-450a-aaf5-48ba92f966c7",
+      "comment": "",
+      "command": "type",
+      "target": "id=end",
+      "targets": [
+        ["id=end", "id"],
+        ["name=end", "name"],
+        ["css=#end", "css:finder"],
+        ["xpath=//input[@id='end']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2023-11-25T22:07:50.662"
+    }, {
+      "id": "ba3acb63-7624-42b7-ac0e-07c2e472a079",
+      "comment": "",
+      "command": "type",
+      "target": "id=start",
+      "targets": [
+        ["id=start", "id"],
+        ["name=start", "name"],
+        ["css=#start", "css:finder"],
+        ["xpath=//input[@id='start']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2023-11-25T22:05:07.2"
+    }, {
+      "id": "5a038507-ff93-496a-8e19-9faf6fd60fbb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.logout",
+      "targets": [
+        ["css=.logout", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c940fe4-f2e9-4257-8129-2950b51b450e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.home",
+      "targets": [
+        ["css=.home", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6d8effff-8891-4516-b7e0-6cc8eb62142b",
+    "name": "SESION MANAGER LOGIN",
+    "commands": [{
+      "id": "50d8a0af-e62b-4480-a7d7-15b418505043",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2320307f-3ca0-4f13-b77c-e6541ff8986a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "587x706",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c3e079a-4ab5-40c4-9629-3d39ad5254ca",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.mainHeading",
+      "targets": [
+        ["css=.mainHeading", "css:finder"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'XYZ Bank')]", "xpath:innerText"]
+      ],
+      "value": "XYZ Bank"
+    }, {
+      "id": "83dc216a-cf69-43e7-a24b-0fd2bfd6e97f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.home",
+      "targets": [
+        ["css=.home", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": "Home"
+    }, {
+      "id": "fc7b46e5-8f2c-4470-9af7-eb02791bcac0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.center:nth-child(1) > .btn",
+      "targets": [
+        ["css=.center:nth-child(1) > .btn", "css:finder"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Customer Login')]", "xpath:innerText"]
+      ],
+      "value": "Customer Login"
+    }, {
+      "id": "bba92ebd-3596-4775-b6ae-047b1482162f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.center:nth-child(3) > .btn",
+      "targets": [
+        ["css=.center:nth-child(3) > .btn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Bank Manager Login')]", "xpath:innerText"]
+      ],
+      "value": "Bank Manager Login"
+    }, {
+      "id": "742c8e22-1001-403c-ae9f-efcd760980b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.center:nth-child(3) > .btn",
+      "targets": [
+        ["css=.center:nth-child(3) > .btn", "css:finder"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Bank Manager Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6105a479-56b0-4de0-9ab0-1f836bbd2e89",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg:nth-child(1)",
+      "targets": [
+        ["css=.btn-lg:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Customer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b6fd7b7-ac59-42e4-9b07-894c85d09720",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Paula"
+    }, {
+      "id": "3364b20f-74d4-467e-8560-a5ee631f99d3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(2) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Cancino"
+    }, {
+      "id": "e3a35ec4-c6b3-4eb8-8ab8-7bd173447aee",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-pristine",
+      "targets": [
+        ["css=.ng-pristine", "css:finder"],
+        ["xpath=(//input[@type='text'])[3]", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "4da98d49-87d5-4ff7-9882-10ac14a0c3ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@value='']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7be547a3-57a6-4e28-8b8d-070c752aac15",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//button[@value='']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": "Add Customer"
+    }, {
+      "id": "29ffa6ba-21a7-4686-93ec-257631d158cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(1) > .form-control",
+      "targets": [
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55410dbf-9c38-4cec-9ecf-6b3b5be02635",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Open Account')]", "xpath:innerText"]
+      ],
+      "value": "Open Account"
+    }, {
+      "id": "c32a5442-9635-446d-a3f1-5fbce25bbc9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/div/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Open Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d1f2fd0-55b9-4da8-a484-b14e10670b07",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.form-group:nth-child(1) > label",
+      "targets": [
+        ["css=.form-group:nth-child(1) > label", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Customer :')]", "xpath:innerText"]
+      ],
+      "value": "Customer :"
+    }, {
+      "id": "b4d1087c-5926-4c53-adee-42c4dff86d51",
+      "comment": "",
+      "command": "click",
+      "target": "id=userSelect",
+      "targets": [
+        ["id=userSelect", "id"],
+        ["name=userSelect", "name"],
+        ["css=#userSelect", "css:finder"],
+        ["xpath=//select[@id='userSelect']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'---Customer Name---')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c07e4768-d6bc-429f-8eec-e6ea5066654c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.form-group:nth-child(2) > label",
+      "targets": [
+        ["css=.form-group:nth-child(2) > label", "css:finder"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Currency :')]", "xpath:innerText"]
+      ],
+      "value": "Currency :"
+    }, {
+      "id": "54315417-71fa-48b7-8f0a-a8d8bb90ecab",
+      "comment": "",
+      "command": "click",
+      "target": "id=currency",
+      "targets": [
+        ["id=currency", "id"],
+        ["name=currency", "name"],
+        ["css=#currency", "css:finder"],
+        ["xpath=//select[@id='currency']", "xpath:attributes"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a70d73f2-74b2-4bbd-9021-5b569e9467e7",
+      "comment": "",
+      "command": "select",
+      "target": "id=currency",
+      "targets": [],
+      "value": "label=Dollar"
+    }, {
+      "id": "86c5adfb-08ec-4689-a377-99deea8053c7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ng-invalid > button",
+      "targets": [
+        ["css=.ng-invalid > button", "css:finder"],
+        ["xpath=//button[@value='']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Process')]", "xpath:innerText"]
+      ],
+      "value": "Process"
+    }, {
+      "id": "071761db-b339-4f90-83b7-271d21ce441d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-invalid > button",
+      "targets": [
+        ["css=.ng-invalid > button", "css:finder"],
+        ["xpath=//button[@value='']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Process')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c4d5269-7deb-4872-bc74-b00a037eed37",
+      "comment": "",
+      "command": "click",
+      "target": "id=userSelect",
+      "targets": [
+        ["id=userSelect", "id"],
+        ["name=userSelect", "name"],
+        ["css=#userSelect", "css:finder"],
+        ["xpath=//select[@id='userSelect']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'---Customer Name---')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f5bce63-0fc3-44d0-812c-02da0f985d45",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.btn-lg:nth-child(3)",
+      "targets": [
+        ["css=.btn-lg:nth-child(3)", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Customers')]", "xpath:innerText"]
+      ],
+      "value": "Customers"
+    }, {
+      "id": "26fb9848-7175-4862-9536-ca569db3d3de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-lg:nth-child(3)",
+      "targets": [
+        ["css=.btn-lg:nth-child(3)", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Customers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d30b617-3772-4d22-a40d-519f721bbb41",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.form-control",
+      "targets": [],
+      "value": "Search Customer"
+    }, {
+      "id": "20aeda2a-ee25-4981-9a78-abd0365e101c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d032a279-c97d-4e0e-800b-d4682c3c0456",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=First Name",
+      "targets": [
+        ["linkText=First Name", "linkText"],
+        ["css=td:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'First Name')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'First Name')]", "xpath:innerText"]
+      ],
+      "value": "First Name"
+    }, {
+      "id": "f113e53a-fd2e-4489-b1af-7098520d9f5e",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Last Name",
+      "targets": [
+        ["linkText=Last Name", "linkText"],
+        ["css=td:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Last Name')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Last Name')]", "xpath:innerText"]
+      ],
+      "value": "Last Name"
+    }, {
+      "id": "42262b67-9706-427a-9017-a60e6a4c6429",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Post Code",
+      "targets": [
+        ["linkText=Post Code", "linkText"],
+        ["css=td:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Post Code')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Post Code')]", "xpath:innerText"]
+      ],
+      "value": "Post Code"
+    }, {
+      "id": "8832054b-ab1a-46c8-abff-c9f3c7894c17",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td:nth-child(4)",
+      "targets": [
+        ["css=td:nth-child(4)", "css:finder"],
+        ["xpath=//td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'Account Number')]", "xpath:innerText"]
+      ],
+      "value": "Account Number"
+    }, {
+      "id": "7d75616e-43e5-4d66-9051-a427dc93103c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td:nth-child(5)",
+      "targets": [
+        ["css=td:nth-child(5)", "css:finder"],
+        ["xpath=//td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'Delete Customer')]", "xpath:innerText"]
+      ],
+      "value": "Delete Customer"
+    }, {
+      "id": "fb54af3a-06e2-4683-bcd3-842f4bffc82a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a47cee6f-9a94-48c8-a010-b8663bba275a",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-control",
+      "targets": [
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "h"
+    }, {
+      "id": "bce176b7-4460-431d-bd59-4f52641cecdb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ng-scope:nth-child(3) button",
+      "targets": [
+        ["css=.ng-scope:nth-child(3) button", "css:finder"],
+        ["xpath=//tr[3]/td[5]/button", "xpath:position"]
+      ],
+      "value": "Delete"
+    }, {
+      "id": "9035f533-6fd4-4c00-8a62-db3050ca0d49",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-scope:nth-child(3) button",
+      "targets": [
+        ["css=.ng-scope:nth-child(3) button", "css:finder"],
+        ["xpath=//tr[3]/td[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b363a9f4-1832-48a0-8d7d-695c974dc52e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.home",
+      "targets": [
+        ["css=.home", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": "Home"
+    }, {
+      "id": "de163c41-c0f7-419b-bbdc-243c621ffddd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.home",
+      "targets": [
+        ["css=.home", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "36ed9ed2-efdd-4689-a152-e0f531280165",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c4338266-17df-491b-bbd3-c5eac40f7ef5", "98781a96-b407-460e-9214-d60da2416d35", "df451fd6-be80-4167-b52a-576f0c4e4e5e", "582b85ea-cc92-4a52-93e6-62904f040c1e", "6d8effff-8891-4516-b7e0-6cc8eb62142b"]
+  }],
+  "urls": ["https://www.globalsqa.com/", "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login", "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/customer", "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/account", "hhttps://www.globalsqa.com/angularJs-protractor/BankingProject/#/account", "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/listTx"],
+  "plugins": []
+}
